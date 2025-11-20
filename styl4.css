@@ -23,7 +23,7 @@ header {
 article {
     display: flex;
 }
-div {
+article div {
     background-color: rgb(175, 238, 238);
     width: 50%;
     height: 250px;

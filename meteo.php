@@ -1,6 +1,6 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "", "prognoza");
-$query = "SELECT * FROM pogoda WHERE miasta_id = 2 ORDER BY data_prognozy";
+$query = "SELECT * FROM pogoda WHERE miasta_id = 2 ORDER BY data_prognozy DESC";
 $result = mysqli_query($conn, $query);
 mysqli_close($conn);
 ?>
@@ -46,11 +46,11 @@ mysqli_close($conn);
                 while($row = mysqli_fetch_array($result)) {
                     echo "<tr>";
                         echo "<td>" . $row[0] . "</td>";
-                        echo "<td>" . $row[1] . "</td>";
                         echo "<td>" . $row[2] . "</td>";
                         echo "<td>" . $row[3] . "</td>";
                         echo "<td>" . $row[4] . "</td>";
                         echo "<td>" . $row[5] . "</td>";
+                        echo "<td>" . $row[6] . "</td>";
                     echo "</tr>";
                 }
             ?>

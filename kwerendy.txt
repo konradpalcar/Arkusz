@@ -1,5 +1,5 @@
 kw1:
-SELECT * FROM pogoda WHERE miasta_id = 2 ORDER BY data_prognozy;
+SELECT * FROM pogoda WHERE miasta_id = 2 ORDER BY data_prognozy DESC;
 kw2:
 SELECT id, temperatura_dzien FROM pogoda WHERE cisnienie < 1000;
 kw3:
